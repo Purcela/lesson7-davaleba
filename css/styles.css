@@ -1,0 +1,72 @@
+
+.full { width: 1500px;
+        height: 700px;
+        position: relative; }
+
+.beck { background-repeat: no-repeat;
+        width: 1500px;
+        height: 700px;
+        position: absolute;
+        background-position: bottom;
+        animation: back 30s infinite;
+        z-index: 3; }
+
+.sun { width: 140px;
+	   height: 140px;
+       position: absolute;
+       animation: sun 30s infinite;
+       transform: translate(-50%,-50%); }
+
+.moon { width: 50px;
+	   height: 50px;
+       position: absolute;
+       animation: moon 30s infinite;
+       transform: translate(-50%,-50%); }
+
+@keyframes back { 
+    0%  {background-image: url(../img/daytree1.jpg); }
+   12.5%  {background-image: url(../img/daytree2.jpg); }
+   25%  {background-image: url(../img/daytree3.jpg); }
+   37.5%  {background-image: url(../img/daytree2.jpg); }
+   50%  {background-image: url(../img/daytree1.jpg); }
+   51%  {background-image: url(../img/nighttree1.jpg); }
+   62.5%  {background-image: url(../img/nighttree2.jpg); }
+   75%  {background-image: url(../img/nighttree3.jpg); }
+   87.5%  {background-image: url(../img/nighttree2.jpg); }
+   100%  {background-image: url(../img/nighttree1.jpg); }
+ }
+
+ @keyframes sun {
+  0%   {top: 650px; left: 60px; transform: translate(-50%,-50%); z-index: 1; }
+  5%   {top: 80%; left: 10%; transform: translate(-50%,-50%); z-index: 5; }
+  10%  {top: 60%; left: 20%; transform: translate(-50%,-50%); z-index: 5; }
+  15%  {top: 40%; left: 30%; transform: translate(-50%,-50%); z-index: 5; }
+  20%  {top: 20%; left: 40%; transform: translate(-50%,-50%); z-index: 5; }
+  25%  {top: 15%; left: 50%; transform: translate(-50%,-50%); z-index: 5; }
+  30%  {top: 20%; left: 60%; transform: translate(-50%,-50%); z-index: 5; }
+  35%  {top: 40%; left: 70%; transform: translate(-50%,-50%); z-index: 5; }
+  40%  {top: 60%; left: 80%; transform: translate(-50%,-50%); z-index: 5; }
+  45%  {top: 80%; left: 90%; transform: translate(-50%,-50%); z-index: 5; }
+  50%  {top: 650px; left: 1440px; transform: translate(-50%,-50%); z-index: 1; }
+
+  100%  {top: 650px; left: 60px; transform: translate(-50%,-50%); z-index: 1; }
+  }
+
+@keyframes moon {
+
+  0%  {top: 650px; left: 60px; transform: translate(-50%,-50%); z-index: 1; }
+
+  50%   {top: 650px; left: 60px; transform: translate(-50%,-50%) rotate(0deg); z-index: 1; }
+  55%   {top: 80%; left: 10%; transform: translate(-50%,-50%) rotate(36deg); z-index: 5; }
+  60%  {top: 60%; left: 20%; transform: translate(-50%,-50%) rotate(72deg); z-index: 5; }
+  65%  {top: 40%; left: 30%; transform: translate(-50%,-50%) rotate(108deg); z-index: 5; }
+  70%  {top: 20%; left: 40%; transform: translate(-50%,-50%) rotate(144deg); z-index: 5; }
+  75%  {top: 15%; left: 50%; transform: translate(-50%,-50%) rotate(180deg); z-index: 5; }
+  80%  {top: 20%; left: 60%; transform: translate(-50%,-50%) rotate(216deg); z-index: 5; }
+  85%  {top: 40%; left: 70%; transform: translate(-50%,-50%) rotate(252deg); z-index: 5; }
+  90%  {top: 60%; left: 80%; transform: translate(-50%,-50%) rotate(288deg); z-index: 5; }
+  95%  {top: 80%; left: 90%; transform: translate(-50%,-50%) rotate(324deg); z-index: 5; }
+  100%  {top: 650px; left: 1440px; transform: translate(-50%,-50%) rotate(360deg); z-index: 1; }
+
+  
+  }
