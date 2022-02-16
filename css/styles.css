@@ -25,14 +25,14 @@
 
 @keyframes back { 
     0%  {background-image: url(../img/daytree1.jpg); }
-   12.5%  {background-image: url(../img/daytree2.jpg); }
+   12%  {background-image: url(../img/daytree2.jpg); }
    25%  {background-image: url(../img/daytree3.jpg); }
-   37.5%  {background-image: url(../img/daytree2.jpg); }
+   37%  {background-image: url(../img/daytree2.jpg); }
    50%  {background-image: url(../img/daytree1.jpg); }
    51%  {background-image: url(../img/nighttree1.jpg); }
-   62.5%  {background-image: url(../img/nighttree2.jpg); }
+   62%  {background-image: url(../img/nighttree2.jpg); }
    75%  {background-image: url(../img/nighttree3.jpg); }
-   87.5%  {background-image: url(../img/nighttree2.jpg); }
+   87%  {background-image: url(../img/nighttree2.jpg); }
    100%  {background-image: url(../img/nighttree1.jpg); }
  }
 
